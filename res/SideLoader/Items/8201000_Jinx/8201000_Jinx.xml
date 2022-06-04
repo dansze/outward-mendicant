@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<SL_AttackSkill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>8201000</Target_ItemID>
+  <New_ItemID>-1</New_ItemID>
+  <Name>Jinx</Name>
+  <Description>Inflicts a random Hex debuff on the target.</Description>
+  <LegacyItemID>-1</LegacyItemID>
+  <IsPickable>false</IsPickable>
+  <IsUsable>false</IsUsable>
+  <QtyRemovedOnUse>0</QtyRemovedOnUse>
+  <GroupItemInDisplay>false</GroupItemInDisplay>
+  <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
+  <RepairedInRest>true</RepairedInRest>
+  <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
+  <CastType>Jinx</CastType>
+  <CastModifier>Immobilized</CastModifier>
+  <CastLocomotionEnabled>false</CastLocomotionEnabled>
+  <MobileCastMovementMult>-1</MobileCastMovementMult>
+  <CastSheatheRequired>1</CastSheatheRequired>
+  <OverrideSellModifier>-1</OverrideSellModifier>
+  <Tags />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <ItemExtensions />
+  <EffectBehaviour>OverrideEffects</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>Effects</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_ShootProjectile">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <CastPosition>Local</CastPosition>
+          <LocalPositionAdd>
+            <x>0</x>
+            <y>1.5</y>
+            <z>0</z>
+          </LocalPositionAdd>
+          <NoAim>false</NoAim>
+          <TargetType>Enemies</TargetType>
+          <TransformName>ShooterTransform</TransformName>
+          <BaseProjectile>JinxProjectile</BaseProjectile>
+          <ProjectileShots>
+            <SL_ProjectileShot>
+              <LocalDirectionOffset>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </LocalDirectionOffset>
+              <LockDirection>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </LockDirection>
+              <MustShoot>true</MustShoot>
+              <NoBaseDir>false</NoBaseDir>
+              <RandomLocalDirectionAdd>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </RandomLocalDirectionAdd>
+            </SL_ProjectileShot>
+          </ProjectileShots>
+          <InstantiatedAmount>2</InstantiatedAmount>
+          <Lifespan>5</Lifespan>
+          <LateShootTime>0.1</LateShootTime>
+          <Unblockable>true</Unblockable>
+          <EffectsOnlyIfHitCharacter>false</EffectsOnlyIfHitCharacter>
+          <EndMode>Normal</EndMode>
+          <DisableOnHit>false</DisableOnHit>
+          <IgnoreShooterCollision>true</IgnoreShooterCollision>
+          <TargetingMode>OwnerTarget</TargetingMode>
+          <TargetCountPerProjectile>1</TargetCountPerProjectile>
+          <TargetRange>80</TargetRange>
+          <AutoTarget>false</AutoTarget>
+          <AutoTargetMaxAngle>360</AutoTargetMaxAngle>
+          <AutoTargetRange>5</AutoTargetRange>
+          <ProjectileForce>50</ProjectileForce>
+          <AddDirection>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </AddDirection>
+          <AddRotationForce>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </AddRotationForce>
+          <YMagnitudeAffect>0</YMagnitudeAffect>
+          <YMagnitudeForce>0</YMagnitudeForce>
+          <DefenseLength>3</DefenseLength>
+          <DefenseRange>0</DefenseRange>
+          <CameraAddYDirection>0</CameraAddYDirection>
+          <ImpactSoundMaterial>Metal_Sharp</ImpactSoundMaterial>
+          <LightIntensityFade>
+            <x>10</x>
+            <y>2</y>
+          </LightIntensityFade>
+          <PointOffset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </PointOffset>
+          <TrailEnabled>false</TrailEnabled>
+          <TrailTime>0.075</TrailTime>
+          <EffectBehaviour>OverrideEffects</EffectBehaviour>
+          <ProjectileEffects>
+            <SL_EffectTransform>
+              <TransformName>HitEffects</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation xsi:nil="true" />
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_AddStatusEffectRandom">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <StatusEffect />
+                  <ChanceToContract>100</ChanceToContract>
+                  <AffectController>false</AffectController>
+                  <AdditionalLevel>0</AdditionalLevel>
+                  <NoDealer>false</NoDealer>
+                  <StatusIdentifiers>
+                    <string>Burn</string>
+                    <string>Chill</string>
+                    <string>Doom</string>
+                    <string>Curse</string>
+                    <string>Haunted</string>
+                  </StatusIdentifiers>
+                  <ForceID>-1</ForceID>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions />
+              <ChildEffects />
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitEffectsKi</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation xsi:nil="true" />
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_PunctualDamage">
+                  <Delay>0</Delay>
+                  <SyncType>Everyone</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <Damage>
+                    <SL_Damage>
+                      <Damage>2</Damage>
+                      <Type>Ethereal</Type>
+                    </SL_Damage>
+                    <SL_Damage>
+                      <Damage>2</Damage>
+                      <Type>Decay</Type>
+                    </SL_Damage>
+                    <SL_Damage>
+                      <Damage>2</Damage>
+                      <Type>Electric</Type>
+                    </SL_Damage>
+                    <SL_Damage>
+                      <Damage>2</Damage>
+                      <Type>Frost</Type>
+                    </SL_Damage>
+                    <SL_Damage>
+                      <Damage>2</Damage>
+                      <Type>Fire</Type>
+                    </SL_Damage>
+                  </Damage>
+                  <Damages_AI />
+                  <Knockback>0</Knockback>
+                  <HitInventory>false</HitInventory>
+                  <IgnoreHalfResistances>false</IgnoreHalfResistances>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>1</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>GEqual</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+          </ProjectileEffects>
+        </SL_Effect>
+      </Effects>
+      <EffectConditions />
+      <ChildEffects />
+    </SL_EffectTransform>
+    <SL_EffectTransform>
+      <TransformName>NormalKiCost</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_ReduceStatusLevel">
+          <Delay>0.5</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+          <ReduceAmount>1</ReduceAmount>
+        </SL_Effect>
+      </Effects>
+      <EffectConditions>
+        <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+          <Invert>false</Invert>
+          <StatusIdentifier>Ki</StatusIdentifier>
+          <CompareLevel>1</CompareLevel>
+          <CheckOwner>false</CheckOwner>
+          <ComparisonType>GEqual</ComparisonType>
+        </SL_EffectCondition>
+      </EffectConditions>
+    </SL_EffectTransform>
+  </EffectTransforms>
+  <Cooldown>5</Cooldown>
+  <StaminaCost>0</StaminaCost>
+  <ManaCost>8</ManaCost>
+  <DurabilityCost>0</DurabilityCost>
+  <DurabilityCostPercent>0</DurabilityCostPercent>
+  <VFXOnStart>true</VFXOnStart>
+  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
+  <StartVFX xsi:nil="true" />
+  <RequiredItems />
+  <HealthCost>0</HealthCost>
+  <RequiredPlayerType>Normal</RequiredPlayerType>
+  <AmmunitionTypes />
+  <RequiredOffHandTypes />
+  <RequiredWeaponTypes />
+  <RequiredWeaponTags />
+  <RequireImbue>false</RequireImbue>
+  <AmmunitionAmount xsi:nil="true" />
+</SL_AttackSkill>

@@ -1,0 +1,1380 @@
+<?xml version="1.0"?>
+<SL_AttackSkill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>8100250</Target_ItemID>
+  <New_ItemID>-22005</New_ItemID>
+  <Name>Towering Ki</Name>
+  <Description>Requires and consumes Ki.
+
+Channel all of your Ki in to a single blast. Spending large amounts of Ki can increase the damage more than usual, but wears on your body.</Description>
+  <LegacyItemID>-1</LegacyItemID>
+  <IsPickable>false</IsPickable>
+  <IsUsable>false</IsUsable>
+  <QtyRemovedOnUse>1</QtyRemovedOnUse>
+  <GroupItemInDisplay>false</GroupItemInDisplay>
+  <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
+  <RepairedInRest>true</RepairedInRest>
+  <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
+  <CastType>Torment</CastType>
+  <CastModifier>Immobilized</CastModifier>
+  <CastLocomotionEnabled>false</CastLocomotionEnabled>
+  <MobileCastMovementMult>-1</MobileCastMovementMult>
+  <CastSheatheRequired>1</CastSheatheRequired>
+  <OverrideSellModifier>-1</OverrideSellModifier>
+  <Tags />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <ItemExtensions />
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>Normal</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_ShootProjectile">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <CastPosition>Local</CastPosition>
+          <LocalPositionAdd>
+            <x>0</x>
+            <y>1.5</y>
+            <z>0</z>
+          </LocalPositionAdd>
+          <NoAim>false</NoAim>
+          <TargetType>Enemies</TargetType>
+          <BaseProjectile>JinxProjectile</BaseProjectile>
+          <ProjectileShots>
+            <SL_ProjectileShot>
+              <LocalDirectionOffset>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </LocalDirectionOffset>
+              <LockDirection>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </LockDirection>
+              <MustShoot>false</MustShoot>
+              <NoBaseDir>false</NoBaseDir>
+              <RandomLocalDirectionAdd>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </RandomLocalDirectionAdd>
+            </SL_ProjectileShot>
+          </ProjectileShots>
+          <InstantiatedAmount>1</InstantiatedAmount>
+          <Lifespan>5</Lifespan>
+          <LateShootTime>0</LateShootTime>
+          <Unblockable>false</Unblockable>
+          <EffectsOnlyIfHitCharacter>false</EffectsOnlyIfHitCharacter>
+          <EndMode>Normal</EndMode>
+          <DisableOnHit>false</DisableOnHit>
+          <IgnoreShooterCollision>true</IgnoreShooterCollision>
+          <TargetingMode>OwnerTarget</TargetingMode>
+          <TargetCountPerProjectile>1</TargetCountPerProjectile>
+          <TargetRange>80</TargetRange>
+          <AutoTarget>false</AutoTarget>
+          <AutoTargetMaxAngle>360</AutoTargetMaxAngle>
+          <AutoTargetRange>80</AutoTargetRange>
+          <ProjectileForce>60</ProjectileForce>
+          <AddDirection>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </AddDirection>
+          <AddRotationForce>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </AddRotationForce>
+          <YMagnitudeAffect>0</YMagnitudeAffect>
+          <YMagnitudeForce>0</YMagnitudeForce>
+          <DefenseLength>0</DefenseLength>
+          <DefenseRange>0</DefenseRange>
+          <CameraAddYDirection>0</CameraAddYDirection>
+          <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+          <LightIntensityFade>
+            <x>0</x>
+            <y>0</y>
+          </LightIntensityFade>
+          <PointOffset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </PointOffset>
+          <TrailEnabled>false</TrailEnabled>
+          <TrailTime>0</TrailTime>
+          <EffectBehaviour>Destroy</EffectBehaviour>
+          <ProjectileEffects>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast10</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>60</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>60</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>30</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>10</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast9</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>45</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>45</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>27</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>9</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast8</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>40</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>40</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>24</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>8</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast7</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>35</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>35</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>21</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>7</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast6</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>30</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>40</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>18</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>6</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast5</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>20</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>20</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>15</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>5</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast4</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>16</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>16</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>12</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>4</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast3</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>12</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>12</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>9</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>3</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast2</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>6</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>6</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>6</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>2</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitCreateKiBlast1</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>Hit</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0.5</y>
+                    <z>1.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>WendigoSoulSyphon</BaseBlast>
+                  <Radius>2.5</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.5</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>NormalDamage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>Everyone</SyncType>
+                          <OverrideCategory>Normal</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>3</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>3</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>3</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>true</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>1</CompareLevel>
+                  <CheckOwner>true</CheckOwner>
+                  <ComparisonType>Equal</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+            <SL_EffectTransform>
+              <TransformName>HitEffect</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation>
+                <x>-90</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootConeBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <CastPosition>Transform</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>-0.5</y>
+                    <z>-0.5</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>CrimsonEliteLaser</BaseBlast>
+                  <Radius>2</Radius>
+                  <RefreshTime>0.3</RefreshTime>
+                  <BlastLifespan>1.8</BlastLifespan>
+                  <InstantiatedAmount>1</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>0</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>false</HitOnShoot>
+                  <IgnoreShooter>false</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>false</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>false</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Fire</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>true</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                </SL_Effect>
+              </Effects>
+            </SL_EffectTransform>
+          </ProjectileEffects>
+        </SL_Effect>
+      </Effects>
+    </SL_EffectTransform>
+    <SL_EffectTransform>
+      <TransformName>ActivationEffects</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+    </SL_EffectTransform>
+    <SL_EffectTransform>
+      <TransformName>AdditionalActivationConditions</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <EffectConditions>
+        <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+          <Invert>false</Invert>
+          <StatusIdentifier>Ki</StatusIdentifier>
+          <CompareLevel>1</CompareLevel>
+          <CheckOwner>false</CheckOwner>
+          <ComparisonType>GEqual</ComparisonType>
+        </SL_EffectCondition>
+      </EffectConditions>
+    </SL_EffectTransform>
+    <SL_EffectTransform>
+      <TransformName>NormalKiPenalties</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <ChildEffects>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty10</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-50</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectBurntHealth">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-50</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>10</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty9</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectBurntHealth">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>9</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty8</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectBurntHealth">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>8</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty7</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectBurntHealth">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>7</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty6</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectBurntHealth">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-30</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>6</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty5</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>5</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty4</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-5</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>4</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty3</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectBurntStamina">
+              <Delay>0.3</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <AffectQuantity>-15</AffectQuantity>
+              <IsModifier>false</IsModifier>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>3</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty2</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>2</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+        <SL_EffectTransform>
+          <TransformName>NormalIncrementalKiPenalty1</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_ReduceStatusLevel">
+              <Delay>0.5</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+              <ReduceAmount>1</ReduceAmount>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+              <Invert>false</Invert>
+              <StatusIdentifier>Ki</StatusIdentifier>
+              <CompareLevel>1</CompareLevel>
+              <CheckOwner>false</CheckOwner>
+              <ComparisonType>GEqual</ComparisonType>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+      </ChildEffects>
+    </SL_EffectTransform>
+  </EffectTransforms>
+  <Cooldown>240</Cooldown>
+  <StaminaCost>30</StaminaCost>
+  <ManaCost>0</ManaCost>
+  <DurabilityCost>0</DurabilityCost>
+  <DurabilityCostPercent>0</DurabilityCostPercent>
+  <VFXOnStart>false</VFXOnStart>
+  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
+  <StartVFX>NONE</StartVFX>
+  <RequiredItems />
+  <HealthCost>0</HealthCost>
+  <RequiredPlayerType>Normal</RequiredPlayerType>
+  <AmmunitionTypes />
+  <RequiredOffHandTypes />
+  <RequiredWeaponTypes />
+  <RequiredWeaponTags />
+  <RequireImbue>false</RequireImbue>
+  <AmmunitionAmount xsi:nil="true" />
+</SL_AttackSkill>

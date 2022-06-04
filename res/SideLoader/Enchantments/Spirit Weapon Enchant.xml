@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<SL_EnchantmentRecipe xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EnchantmentID>-22050</EnchantmentID>
+  <Name>Spirit Weapon</Name>
+  <Description>The weapon's natural physical damage is reduced, but it gains a large flat bonus. Indestructible. </Description>
+  <IncenseItemID>6000210</IncenseItemID>
+  <PillarDatas>
+    <PillarData>
+      <Direction>North</Direction>
+      <IsFar>false</IsFar>
+    </PillarData>
+    <PillarData>
+      <Direction>East</Direction>
+      <IsFar>true</IsFar>
+    </PillarData>
+    <PillarData>
+      <Direction>South</Direction>
+      <IsFar>false</IsFar>
+    </PillarData>
+    <PillarData>
+      <Direction>West</Direction>
+      <IsFar>true</IsFar>
+    </PillarData>
+  </PillarDatas>
+  <CompatibleEquipment>
+    <Equipments>
+      <IngredientData>
+        <SelectorType>Tag</SelectorType>
+        <SelectorValue>thinking</SelectorValue>
+      </IngredientData>
+    </Equipments>
+    <RequiredTag>Weapon</RequiredTag>
+  </CompatibleEquipment>
+  <TimeOfDay />
+  <Areas />
+  <Temperature />
+  <WindAltarActivated>false</WindAltarActivated>
+  <IsEnchantingGuildRecipe>false</IsEnchantingGuildRecipe>
+  <EnchantTime>5</EnchantTime>
+  <Effects />
+  <AddedDamages>
+    <AdditionalDamage>
+      <AddedDamageType>Physical</AddedDamageType>
+      <SourceDamageType>Physical</SourceDamageType>
+      <ConversionRatio>-0.6</ConversionRatio>
+    </AdditionalDamage>
+  </AddedDamages>
+  <FlatDamageAdded>
+    <SL_Damage>
+      <Damage>20</Damage>
+      <Type>Physical</Type>
+    </SL_Damage>
+  </FlatDamageAdded>
+  <DamageModifierBonus />
+  <DamageResistanceBonus />
+  <HealthAbsorbRatio>0</HealthAbsorbRatio>
+  <ManaAbsorbRatio>0</ManaAbsorbRatio>
+  <StaminaAbsorbRatio>0</StaminaAbsorbRatio>
+  <Indestructible>true</Indestructible>
+  <TrackDamageRatio>-1</TrackDamageRatio>
+  <GlobalStatusResistance>0</GlobalStatusResistance>
+</SL_EnchantmentRecipe>

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OutwardModTemplate
+namespace MendicantMod
 {
     /* ~~~ Initial Setup ~~~
      * 
@@ -20,20 +20,20 @@ namespace OutwardModTemplate
      */
 
     [BepInPlugin(GUID, NAME, VERSION)]
-    public class MyMod : BaseUnityPlugin
+    public class Mendicant : BaseUnityPlugin
     {
         // Choose a GUID for your project. Change "myname" and "mymod".
-        public const string GUID = "myname.mymod";
+        public const string GUID = "dsze.mendicant";
         // Choose a NAME for your project, generally the same as your Assembly Name.
-        public const string NAME = "MyMod";
+        public const string NAME = "Mendicant";
         // Increment the VERSION when you release a new version of your mod.
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "0.1.0";
 
         // For accessing your BepInEx Logger from outside of this class (MyMod.Log)
         internal static ManualLogSource Log;
 
         // If you need settings, define them like so:
-        public static ConfigEntry<bool> ExampleConfig;
+        public static ConfigEntry<bool> ModConfig;
 
         // Awake is called when your plugin is created. Use this to set up your mod.
         internal void Awake()
@@ -42,7 +42,7 @@ namespace OutwardModTemplate
             Log.LogMessage($"Hello world from {NAME} {VERSION}!");
 
             // Any config settings you define should be set up like this:
-            ExampleConfig = Config.Bind("ExampleCategory", "ExampleSetting", false, "This is an example setting.");
+            ModConfig = Config.Bind("ExampleCategory", "ExampleSetting", false, "This is an example setting.");
 
             // Harmony is for patching methods. If you're not patching anything, you can comment-out or delete this line.
             new Harmony(GUID).PatchAll();
@@ -53,19 +53,6 @@ namespace OutwardModTemplate
         internal void Update()
         {
 
-        }
-
-        // This is an example of a Harmony patch.
-        // If you're not using this, you should delete it.
-        [HarmonyPatch(typeof(ResourcesPrefabManager), nameof(ResourcesPrefabManager.Load))]
-        public class ResourcesPrefabManager_Load
-        {
-            static void Postfix()
-            {
-                // This is a "Postfix" (runs after original) on ResourcesPrefabManager.Load
-                // For more documentation on Harmony, see the Harmony Wiki.
-                // https://harmony.pardeike.net/
-            }
         }
     }
 }

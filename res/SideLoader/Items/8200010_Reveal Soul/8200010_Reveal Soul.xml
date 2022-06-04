@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<SL_Skill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>8200010</Target_ItemID>
+  <New_ItemID>8200010</New_ItemID>
+  <Name>Reveal Soul</Name>
+  <Description>Reveal the blueish soul orb left by deceased thieves and adventurers.
+
+Certain spells must be cast in proximity to a soul.</Description>
+  <LegacyItemID>-1</LegacyItemID>
+  <IsPickable>false</IsPickable>
+  <IsUsable>false</IsUsable>
+  <QtyRemovedOnUse>1</QtyRemovedOnUse>
+  <GroupItemInDisplay>false</GroupItemInDisplay>
+  <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
+  <RepairedInRest>true</RepairedInRest>
+  <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
+  <CastType>Normal</CastType>
+  <CastModifier>Immobilized</CastModifier>
+  <CastLocomotionEnabled>false</CastLocomotionEnabled>
+  <MobileCastMovementMult>-1</MobileCastMovementMult>
+  <CastSheatheRequired>1</CastSheatheRequired>
+  <OverrideSellModifier>-1</OverrideSellModifier>
+  <Tags />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <ItemExtensions />
+  <EffectBehaviour>OverrideEffects</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>NormalKiSynergy</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_Summon">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <Prefab>8000000</Prefab>
+          <SummonPrefabType>Item</SummonPrefabType>
+          <BufferSize>1</BufferSize>
+          <LimitOfOne>false</LimitOfOne>
+          <SummonMode>CreateNew</SummonMode>
+          <PositionType>AroundTarget</PositionType>
+          <MinDistance>0</MinDistance>
+          <MaxDistance>3</MaxDistance>
+          <SameDirectionAsSummoner>false</SameDirectionAsSummoner>
+          <SummonLocalForward>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </SummonLocalForward>
+          <IgnoreOnDestroy>false</IgnoreOnDestroy>
+        </SL_Effect>
+        <SL_Effect xsi:type="SL_ReduceStatusLevel">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+          <ReduceAmount>3</ReduceAmount>
+        </SL_Effect>
+      </Effects>
+      <EffectConditions>
+        <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+          <Invert>false</Invert>
+          <StatusIdentifier>Ki</StatusIdentifier>
+          <CompareLevel>3</CompareLevel>
+          <CheckOwner>true</CheckOwner>
+          <ComparisonType>GEqual</ComparisonType>
+        </SL_EffectCondition>
+        <SL_EffectCondition xsi:type="SL_ProximitySoulSpotCondition">
+          <Invert>true</Invert>
+          <Distance>20</Distance>
+        </SL_EffectCondition>
+        <SL_EffectCondition xsi:type="SL_ProximityCondition">
+          <Invert>true</Invert>
+          <RequiredItems>
+            <SkillItemReq>
+              <ItemID>8000000</ItemID>
+              <Quantity>1</Quantity>
+              <Consume>false</Consume>
+            </SkillItemReq>
+          </RequiredItems>
+          <MaxDistance>20</MaxDistance>
+          <Offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </Offset>
+          <ProximityAngle>-1</ProximityAngle>
+          <OrMode>false</OrMode>
+        </SL_EffectCondition>
+      </EffectConditions>
+      <ChildEffects />
+    </SL_EffectTransform>
+  </EffectTransforms>
+  <Cooldown>5</Cooldown>
+  <StaminaCost>0</StaminaCost>
+  <ManaCost>5</ManaCost>
+  <DurabilityCost>0</DurabilityCost>
+  <DurabilityCostPercent>0</DurabilityCostPercent>
+  <VFXOnStart>true</VFXOnStart>
+  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
+  <StartVFX>VFXDetectSoul</StartVFX>
+  <RequiredItems />
+  <HealthCost>0</HealthCost>
+  <RequiredPlayerType>Normal</RequiredPlayerType>
+</SL_Skill>

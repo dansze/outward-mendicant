@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<SL_ImbueEffect xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TargetStatusID>219</TargetStatusID>
+  <NewStatusID>-22032</NewStatusID>
+  <Name>Ki Imbue</Name>
+  <Description>Weapon deals bonus physical damage. Weapon attacks and skills do less damage.</Description>
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <Effects>
+    <SL_EffectTransform>
+      <TransformName>HitEffects</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_PunctualDamage">
+          <Delay>0</Delay>
+          <SyncType>Everyone</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <Damage>
+            <SL_Damage>
+              <Damage>40</Damage>
+              <Type>Physical</Type>
+            </SL_Damage>
+          </Damage>
+          <Damages_AI />
+          <Knockback>5</Knockback>
+          <HitInventory>false</HitInventory>
+          <IgnoreHalfResistances>false</IgnoreHalfResistances>
+        </SL_Effect>
+      </Effects>
+      <EffectConditions />
+      <ChildEffects />
+    </SL_EffectTransform>
+  </Effects>
+</SL_ImbueEffect>
