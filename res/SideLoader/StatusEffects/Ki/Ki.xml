@@ -80,6 +80,40 @@
           <AffectQuantity>0.02</AffectQuantity>
         </SL_Effect>
       </Effects>
+      <ChildEffects>
+        <SL_EffectTransform>
+          <TransformName>Normal Perfect Self Bonus</TransformName>
+          <Position xsi:nil="true" />
+          <Rotation xsi:nil="true" />
+          <Scale xsi:nil="true" />
+          <Effects>
+            <SL_Effect xsi:type="SL_AffectStat">
+              <Delay>0</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <Stat_Tag>PhysicalProtection</Stat_Tag>
+              <AffectQuantity>1</AffectQuantity>
+              <IsModifier>false</IsModifier>
+              <Duration>-1</Duration>
+            </SL_Effect>
+            <SL_Effect xsi:type="SL_AffectStat">
+              <Delay>0</Delay>
+              <SyncType>OwnerSync</SyncType>
+              <OverrideCategory>None</OverrideCategory>
+              <Stat_Tag>Barrier</Stat_Tag>
+              <AffectQuantity>1</AffectQuantity>
+              <IsModifier>false</IsModifier>
+              <Duration>-1</Duration>
+            </SL_Effect>
+          </Effects>
+          <EffectConditions>
+            <SL_EffectCondition xsi:type="SL_PassiveSkillCondition">
+              <Invert>false</Invert>
+              <ReqSkillID>-22007</ReqSkillID>
+            </SL_EffectCondition>
+          </EffectConditions>
+        </SL_EffectTransform>
+      </ChildEffects>
     </SL_EffectTransform>
   </Effects>
   <MaxLevel>10</MaxLevel>

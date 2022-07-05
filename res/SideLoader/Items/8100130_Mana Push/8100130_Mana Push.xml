@@ -196,7 +196,7 @@ Can be combined with other spells for powerful effects.</Description>
           <SyncType>OwnerSync</SyncType>
           <OverrideCategory>Normal</OverrideCategory>
           <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
-          <ReduceAmount>2</ReduceAmount>
+          <ReduceAmount>1</ReduceAmount>
         </SL_Effect>
       </Effects>
       <EffectConditions>

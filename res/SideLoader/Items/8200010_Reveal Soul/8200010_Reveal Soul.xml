@@ -56,14 +56,14 @@ Certain spells must be cast in proximity to a soul.</Description>
           <SyncType>OwnerSync</SyncType>
           <OverrideCategory>None</OverrideCategory>
           <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
-          <ReduceAmount>3</ReduceAmount>
+          <ReduceAmount>2</ReduceAmount>
         </SL_Effect>
       </Effects>
       <EffectConditions>
         <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
           <Invert>false</Invert>
           <StatusIdentifier>Ki</StatusIdentifier>
-          <CompareLevel>3</CompareLevel>
+          <CompareLevel>2</CompareLevel>
           <CheckOwner>true</CheckOwner>
           <ComparisonType>GEqual</ComparisonType>
         </SL_EffectCondition>

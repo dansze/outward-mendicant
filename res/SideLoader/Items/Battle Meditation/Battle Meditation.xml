@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<SL_Skill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>-22001</Target_ItemID>
+  <New_ItemID>-22008</New_ItemID>
+  <Name>Battle Meditation</Name>
+  <Description>Channel Ki through your weapons, spending 2 Ki for each weapon hit to blast enemies.</Description>
+  <LegacyItemID>-1</LegacyItemID>
+  <IsPickable>false</IsPickable>
+  <IsUsable>false</IsUsable>
+  <QtyRemovedOnUse>0</QtyRemovedOnUse>
+  <GroupItemInDisplay>false</GroupItemInDisplay>
+  <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
+  <RepairedInRest>true</RepairedInRest>
+  <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
+  <CastType>NONE</CastType>
+  <CastModifier>Immobilized</CastModifier>
+  <CastLocomotionEnabled>false</CastLocomotionEnabled>
+  <MobileCastMovementMult>-1</MobileCastMovementMult>
+  <CastSheatheRequired>1</CastSheatheRequired>
+  <OverrideSellModifier>-1</OverrideSellModifier>
+  <Tags />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <ItemExtensions />
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>Passive Hits</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_OnHitEffect">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <EffectBehavior>Destroy</EffectBehavior>
+          <ChildEffects>
+            <SL_EffectTransform>
+              <TransformName>Normal Blast</TransformName>
+              <Position>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </Position>
+              <Rotation>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </Rotation>
+              <Scale>
+                <x>0</x>
+                <y>0</y>
+                <z>0</z>
+              </Scale>
+              <Effects>
+                <SL_Effect xsi:type="SL_ShootBlast">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <CastPosition>Character</CastPosition>
+                  <LocalPositionAdd>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                  </LocalPositionAdd>
+                  <NoAim>false</NoAim>
+                  <TargetType>Enemies</TargetType>
+                  <BaseBlast>EtherealBlast_Enchantment</BaseBlast>
+                  <Radius>0.8</Radius>
+                  <RefreshTime>0.5</RefreshTime>
+                  <BlastLifespan>0.1</BlastLifespan>
+                  <InstantiatedAmount>5</InstantiatedAmount>
+                  <Interruptible>false</Interruptible>
+                  <MaxHitTargetCount>-1</MaxHitTargetCount>
+                  <AffectHitTargetCenter>false</AffectHitTargetCenter>
+                  <HitOnShoot>true</HitOnShoot>
+                  <IgnoreShooter>true</IgnoreShooter>
+                  <IgnoreStop>false</IgnoreStop>
+                  <NoTargetForwardMultiplier>0.5</NoTargetForwardMultiplier>
+                  <ParentToShootTransform>true</ParentToShootTransform>
+                  <UseTargetCharacterPositionType>true</UseTargetCharacterPositionType>
+                  <ImpactSoundMaterial>Leather</ImpactSoundMaterial>
+                  <DontPlayHitSound>false</DontPlayHitSound>
+                  <FXIsWorld>false</FXIsWorld>
+                  <PlaySounOnRefresh>false</PlaySounOnRefresh>
+                  <DelayFirstShoot>0</DelayFirstShoot>
+                  <PlayFXOnRefresh>false</PlayFXOnRefresh>
+                  <EffectBehaviour>Destroy</EffectBehaviour>
+                  <BlastEffects>
+                    <SL_EffectTransform>
+                      <TransformName>Normal Damage</TransformName>
+                      <Position xsi:nil="true" />
+                      <Rotation xsi:nil="true" />
+                      <Scale xsi:nil="true" />
+                      <Effects>
+                        <SL_Effect xsi:type="SL_PunctualDamage">
+                          <Delay>0</Delay>
+                          <SyncType>OwnerSync</SyncType>
+                          <OverrideCategory>None</OverrideCategory>
+                          <Damage>
+                            <SL_Damage>
+                              <Damage>10</Damage>
+                              <Type>Ethereal</Type>
+                            </SL_Damage>
+                            <SL_Damage>
+                              <Damage>10</Damage>
+                              <Type>Physical</Type>
+                            </SL_Damage>
+                          </Damage>
+                          <Damages_AI />
+                          <Knockback>10</Knockback>
+                          <HitInventory>false</HitInventory>
+                          <IgnoreHalfResistances>false</IgnoreHalfResistances>
+                        </SL_Effect>
+                      </Effects>
+                    </SL_EffectTransform>
+                  </BlastEffects>
+                </SL_Effect>
+                <SL_Effect xsi:type="SL_ReduceStatusLevel">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
+                  <ReduceAmount>2</ReduceAmount>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">
+                  <Invert>false</Invert>
+                  <StatusIdentifier>Ki</StatusIdentifier>
+                  <CompareLevel>2</CompareLevel>
+                  <CheckOwner>false</CheckOwner>
+                  <ComparisonType>GEqual</ComparisonType>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+          </ChildEffects>
+          <ActivationLimit>5</ActivationLimit>
+          <RequiredSourceType>WEAPON</RequiredSourceType>
+          <RequireAllTypes>false</RequireAllTypes>
+          <MinDamage>0</MinDamage>
+          <OnlyCountRequiredTypes>false</OnlyCountRequiredTypes>
+          <UseHighestType>false</UseHighestType>
+          <IgnoreDamageReduction>false</IgnoreDamageReduction>
+        </SL_Effect>
+      </Effects>
+    </SL_EffectTransform>
+  </EffectTransforms>
+  <Cooldown>0</Cooldown>
+  <StaminaCost>0</StaminaCost>
+  <ManaCost>0</ManaCost>
+  <DurabilityCost>0</DurabilityCost>
+  <DurabilityCostPercent>0</DurabilityCostPercent>
+  <VFXOnStart>false</VFXOnStart>
+  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
+  <StartVFX xsi:nil="true" />
+  <RequiredItems />
+  <HealthCost>0</HealthCost>
+  <RequiredPlayerType>Normal</RequiredPlayerType>
+</SL_Skill>

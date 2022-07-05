@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<SL_LevelPassiveSkill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Target_ItemID>8205402</Target_ItemID>
-  <New_ItemID>-22002</New_ItemID>
-  <Name>Iron Will</Name>
-  <Description>Gain 3% impact resistance per Ki.</Description>
+<SL_AttackSkill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>8100220</Target_ItemID>
+  <New_ItemID>-22000</New_ItemID>
+  <Name>Short Rest</Name>
+  <Description>Sit down and rest, restoring stamina and Ki over time. Ends if you are hit.</Description>
   <LegacyItemID>-1</LegacyItemID>
-  <IsPickable>true</IsPickable>
+  <IsPickable>false</IsPickable>
   <IsUsable>false</IsUsable>
   <QtyRemovedOnUse>1</QtyRemovedOnUse>
   <GroupItemInDisplay>false</GroupItemInDisplay>
   <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
   <RepairedInRest>true</RepairedInRest>
   <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
-  <CastType>NONE</CastType>
+  <CastType>Sit</CastType>
   <CastModifier>Immobilized</CastModifier>
   <CastLocomotionEnabled>false</CastLocomotionEnabled>
   <MobileCastMovementMult>-1</MobileCastMovementMult>
@@ -24,36 +24,39 @@
   <EffectBehaviour>Destroy</EffectBehaviour>
   <EffectTransforms>
     <SL_EffectTransform>
-      <TransformName>Passive</TransformName>
+      <TransformName>Normal Sit</TransformName>
       <Position xsi:nil="true" />
       <Rotation xsi:nil="true" />
       <Scale xsi:nil="true" />
       <Effects>
-        <SL_Effect xsi:type="SL_AffectStat">
+        <SL_Effect xsi:type="SL_AddStatusEffect">
           <Delay>0</Delay>
           <SyncType>OwnerSync</SyncType>
           <OverrideCategory>None</OverrideCategory>
-          <Stat_Tag>ImpactResistance</Stat_Tag>
-          <AffectQuantity>3</AffectQuantity>
-          <IsModifier>false</IsModifier>
-          <Tags />
-          <Duration>-1</Duration>
+          <StatusEffect>ShortRest</StatusEffect>
+          <ChanceToContract>100</ChanceToContract>
+          <AffectController>false</AffectController>
+          <AdditionalLevel>0</AdditionalLevel>
+          <NoDealer>false</NoDealer>
         </SL_Effect>
       </Effects>
-      <EffectConditions />
-      <ChildEffects />
     </SL_EffectTransform>
   </EffectTransforms>
-  <Cooldown>0</Cooldown>
+  <Cooldown>120</Cooldown>
   <StaminaCost>0</StaminaCost>
   <ManaCost>0</ManaCost>
   <DurabilityCost>0</DurabilityCost>
   <DurabilityCostPercent>0</DurabilityCostPercent>
   <VFXOnStart>true</VFXOnStart>
-  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
-  <StartVFX xsi:nil="true" />
+  <StopStartVFXOnEnd>true</StopStartVFXOnEnd>
+  <StartVFX>UnerringReadVFX</StartVFX>
   <RequiredItems />
   <HealthCost>0</HealthCost>
   <RequiredPlayerType>Normal</RequiredPlayerType>
-  <WatchedStatusIdentifier>Ki</WatchedStatusIdentifier>
-</SL_LevelPassiveSkill>
+  <AmmunitionTypes />
+  <RequiredOffHandTypes />
+  <RequiredWeaponTypes />
+  <RequiredWeaponTags />
+  <RequireImbue>false</RequireImbue>
+  <AmmunitionAmount xsi:nil="true" />
+</SL_AttackSkill>

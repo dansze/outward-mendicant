@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<SL_Skill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>8205060</Target_ItemID>
+  <New_ItemID>-22001</New_ItemID>
+  <Name>Ebb and Flow</Name>
+  <Description>Substantial hits you deal while affected by Clarity grant you Ki</Description>
+  <LegacyItemID>-1</LegacyItemID>
+  <IsPickable>false</IsPickable>
+  <IsUsable>false</IsUsable>
+  <QtyRemovedOnUse>1</QtyRemovedOnUse>
+  <GroupItemInDisplay>false</GroupItemInDisplay>
+  <HasPhysicsWhenWorld>false</HasPhysicsWhenWorld>
+  <RepairedInRest>true</RepairedInRest>
+  <BehaviorOnNoDurability>NotSet</BehaviorOnNoDurability>
+  <CastType>NONE</CastType>
+  <CastModifier>Immobilized</CastModifier>
+  <CastLocomotionEnabled>false</CastLocomotionEnabled>
+  <MobileCastMovementMult>-1</MobileCastMovementMult>
+  <CastSheatheRequired>1</CastSheatheRequired>
+  <OverrideSellModifier>-1</OverrideSellModifier>
+  <Tags />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <ItemExtensions />
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>Passive OnHit</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_OnHitEffect">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <EffectBehavior>Destroy</EffectBehavior>
+          <ChildEffects>
+            <SL_EffectTransform>
+              <TransformName>Normal Ki Gain</TransformName>
+              <Position xsi:nil="true" />
+              <Rotation xsi:nil="true" />
+              <Scale xsi:nil="true" />
+              <Effects>
+                <SL_Effect xsi:type="SL_AddStatusEffect">
+                  <Delay>0</Delay>
+                  <SyncType>OwnerSync</SyncType>
+                  <OverrideCategory>None</OverrideCategory>
+                  <StatusEffect>Ki</StatusEffect>
+                  <ChanceToContract>100</ChanceToContract>
+                  <AffectController>false</AffectController>
+                  <AdditionalLevel>0</AdditionalLevel>
+                  <NoDealer>false</NoDealer>
+                </SL_Effect>
+              </Effects>
+              <EffectConditions>
+                <SL_EffectCondition xsi:type="SL_HasStatusEffectEffectCondition">
+                  <Invert>false</Invert>
+                  <DiseaseAge>0</DiseaseAge>
+                  <CheckOwner>false</CheckOwner>
+                  <StatusSelectorType>StatusSpecific</StatusSelectorType>
+                  <SelectorValue>Clarity</SelectorValue>
+                </SL_EffectCondition>
+              </EffectConditions>
+            </SL_EffectTransform>
+          </ChildEffects>
+          <ActivationLimit>6</ActivationLimit>
+          <RequiredSourceType>ANY</RequiredSourceType>
+          <RequireAllTypes>false</RequireAllTypes>
+          <MinDamage>20</MinDamage>
+          <OnlyCountRequiredTypes>false</OnlyCountRequiredTypes>
+          <UseHighestType>false</UseHighestType>
+          <IgnoreDamageReduction>false</IgnoreDamageReduction>
+        </SL_Effect>
+      </Effects>
+    </SL_EffectTransform>
+  </EffectTransforms>
+  <Cooldown>0</Cooldown>
+  <StaminaCost>0</StaminaCost>
+  <ManaCost>0</ManaCost>
+  <DurabilityCost>0</DurabilityCost>
+  <DurabilityCostPercent>0</DurabilityCostPercent>
+  <VFXOnStart>false</VFXOnStart>
+  <StopStartVFXOnEnd>false</StopStartVFXOnEnd>
+  <StartVFX xsi:nil="true" />
+  <RequiredItems />
+  <HealthCost>0</HealthCost>
+  <RequiredPlayerType>Normal</RequiredPlayerType>
+</SL_Skill>

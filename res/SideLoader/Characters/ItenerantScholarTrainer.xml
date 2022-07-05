@@ -63,6 +63,8 @@
     <float>0</float>
   </Damage_Bonus>
   <Status_Immunity />
+  <AutoTeleportWhenFar>false</AutoTeleportWhenFar>
+  <AutoTeleportDistanceThreshold>25</AutoTeleportDistanceThreshold>
   <SkillTree>
     <Name>Itinerant Scholar</Name>
     <UID>dsze.mendicants.scholar.skilltree</UID>
@@ -95,6 +97,16 @@
             <SilverCost>100</SilverCost>
             <Breakthrough>false</Breakthrough>
           </SL_BaseSkillSlot>
+          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
+            <ColumnIndex>1</ColumnIndex>
+            <RequiredSkillSlot>
+              <x>0</x>
+              <y>0</y>
+            </RequiredSkillSlot>
+            <SkillID>-22009</SkillID>
+            <SilverCost>100</SilverCost>
+            <Breakthrough>false</Breakthrough>
+          </SL_BaseSkillSlot>
         </Slots>
       </SL_SkillRow>
       <SL_SkillRow>
@@ -114,6 +126,41 @@
       </SL_SkillRow>
       <SL_SkillRow>
         <RowIndex>4</RowIndex>
+        <Slots>
+          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
+            <ColumnIndex>2</ColumnIndex>
+            <RequiredSkillSlot>
+              <x>0</x>
+              <y>0</y>
+            </RequiredSkillSlot>
+            <SkillID>-22005</SkillID>
+            <SilverCost>600</SilverCost>
+            <Breakthrough>false</Breakthrough>
+          </SL_BaseSkillSlot>
+          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
+            <ColumnIndex>1</ColumnIndex>
+            <RequiredSkillSlot>
+              <x>2</x>
+              <y>1</y>
+            </RequiredSkillSlot>
+            <SkillID>-22001</SkillID>
+            <SilverCost>600</SilverCost>
+            <Breakthrough>false</Breakthrough>
+          </SL_BaseSkillSlot>
+          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
+            <ColumnIndex>3</ColumnIndex>
+            <RequiredSkillSlot>
+              <x>2</x>
+              <y>3</y>
+            </RequiredSkillSlot>
+            <SkillID>-22004</SkillID>
+            <SilverCost>600</SilverCost>
+            <Breakthrough>false</Breakthrough>
+          </SL_BaseSkillSlot>
+        </Slots>
+      </SL_SkillRow>
+      <SL_SkillRow>
+        <RowIndex>5</RowIndex>
         <Slots>
           <SL_BaseSkillSlot xsi:type="SL_SkillSlotFork">
             <ColumnIndex>2</ColumnIndex>
@@ -141,41 +188,6 @@
               <SilverCost>600</SilverCost>
               <Breakthrough>false</Breakthrough>
             </Choice2>
-          </SL_BaseSkillSlot>
-        </Slots>
-      </SL_SkillRow>
-      <SL_SkillRow>
-        <RowIndex>5</RowIndex>
-        <Slots>
-          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
-            <ColumnIndex>1</ColumnIndex>
-            <RequiredSkillSlot>
-              <x>0</x>
-              <y>0</y>
-            </RequiredSkillSlot>
-            <SkillID>-22005</SkillID>
-            <SilverCost>600</SilverCost>
-            <Breakthrough>false</Breakthrough>
-          </SL_BaseSkillSlot>
-          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
-            <ColumnIndex>2</ColumnIndex>
-            <RequiredSkillSlot>
-              <x>0</x>
-              <y>0</y>
-            </RequiredSkillSlot>
-            <SkillID>-22001</SkillID>
-            <SilverCost>600</SilverCost>
-            <Breakthrough>false</Breakthrough>
-          </SL_BaseSkillSlot>
-          <SL_BaseSkillSlot xsi:type="SL_SkillSlot">
-            <ColumnIndex>3</ColumnIndex>
-            <RequiredSkillSlot>
-              <x>2</x>
-              <y>3</y>
-            </RequiredSkillSlot>
-            <SkillID>-22004</SkillID>
-            <SilverCost>600</SilverCost>
-            <Breakthrough>false</Breakthrough>
           </SL_BaseSkillSlot>
         </Slots>
       </SL_SkillRow>

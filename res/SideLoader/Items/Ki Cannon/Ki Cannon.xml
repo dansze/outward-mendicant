@@ -1036,14 +1036,14 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-50</AffectQuantity>
+              <AffectQuantity>-23</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_AffectBurntHealth">
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-50</AffectQuantity>
+              <AffectQuantity>-23</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1074,14 +1074,14 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_AffectBurntHealth">
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1112,14 +1112,14 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_AffectBurntHealth">
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1150,14 +1150,14 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_AffectBurntHealth">
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-3</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1188,14 +1188,14 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-8</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_AffectBurntHealth">
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-30</AffectQuantity>
+              <AffectQuantity>-18</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1226,7 +1226,7 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-2</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1257,7 +1257,7 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-5</AffectQuantity>
+              <AffectQuantity>-2</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1288,7 +1288,7 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
               <Delay>0.3</Delay>
               <SyncType>OwnerSync</SyncType>
               <OverrideCategory>None</OverrideCategory>
-              <AffectQuantity>-15</AffectQuantity>
+              <AffectQuantity>-6</AffectQuantity>
               <IsModifier>false</IsModifier>
             </SL_Effect>
             <SL_Effect xsi:type="SL_ReduceStatusLevel">
@@ -1360,7 +1360,7 @@ Channel all of your Ki in to a single blast. Spending large amounts of Ki can in
       </ChildEffects>
     </SL_EffectTransform>
   </EffectTransforms>
-  <Cooldown>240</Cooldown>
+  <Cooldown>180</Cooldown>
   <StaminaCost>30</StaminaCost>
   <ManaCost>0</ManaCost>
   <DurabilityCost>0</DurabilityCost>

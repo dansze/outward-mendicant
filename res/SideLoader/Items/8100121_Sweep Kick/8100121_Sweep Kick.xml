@@ -172,13 +172,6 @@
             </SL_EffectTransform>
           </BlastEffects>
         </SL_Effect>
-        <SL_Effect xsi:type="SL_ReduceStatusLevel">
-          <Delay>0</Delay>
-          <SyncType>OwnerSync</SyncType>
-          <OverrideCategory>None</OverrideCategory>
-          <StatusIdentifierToReduce>Ki</StatusIdentifierToReduce>
-          <ReduceAmount>1</ReduceAmount>
-        </SL_Effect>
       </Effects>
       <EffectConditions>
         <SL_EffectCondition xsi:type="SL_HasStatusLevelCondition">

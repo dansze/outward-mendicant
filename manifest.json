@@ -1,0 +1,7 @@
+{
+    "name":  "Mendicants",
+    "description": "Adds two classes inspired by tabletop Monk Archetypes",
+    "version_number": "0.1.0",
+    "dependencies": ["sinai-dev-SideLoader-3.7.11","Dsze-Dancore-0.1.0"],
+    "website_url": "https://github.com/dansze/outward-mendicant"
+}
